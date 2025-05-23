@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300,400,500,600,700&display=swap');
+
+body{
+    font-family: 'Barlow', 'sans-serif';
+    line-height: 1.7;
+    color: #516271;
+}
+section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700 !important;
+    color: #092032;
+}
+a{ 
+    color: #092032;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 500;
+} 
+img{
+    width: 100%;
+}
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.intro{
+    margin-bottom: 40px;
+}
+.intro h6{
+    font-weight: 400;
+    color: rgb(102,8,33)
+}
+.intro p{
+    max-width: 500px;
+    margin: auto;
+}
+
+/********************* NAVBAR **********************/
+.top-nav{
+    background-color: rgb(102,8,33);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: rgb(102,8,33);
+}
+.activ{
+    color: rgb(102,8,33) !important;
+}
+
+.top-nav p{
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 20px;
+    color: #fff;
+}
+.top-nav i,
+.top-nav span{
+    vertical-align: middle;
+}
+
+.social-links a{
+    width: 34px;
+    height: 34px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 20px;
+    border-radius: 100%;
+}
+.social-links a:hover{
+    background-color: #fff;
+    color: rgb(102,8,33); 
+}
+
+.navbar{
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand{
+    font-weight: 700;
+    font-size: 26px;
+    color: #092032;
+}
+
+.navbar-brand span{
+    color: rgb(102,8,33);
+}
+
+.btn{
+    padding: 9px 24px;
+    font-weight: 500;
+}
+.btn-brand{
+    background-color: rgb(102,8,33);
+    color: #fff;
+    border-color: rgb(102,8,33);
+}
+.btn-brand:hover{
+    color: #516271;
+    background-color: #460f04;
+}
+
+/*********************** SLIDE ************************/
+.slide1{
+    background: linear-gradient(rgba(9,32,50,0.4),rgba(9,32,50,0.4)), url(../Images/biss.jpg);
+}
