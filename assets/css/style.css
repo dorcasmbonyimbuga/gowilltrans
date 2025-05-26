@@ -11,18 +11,16 @@ section{
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-weight: 700 !important;
+    /* font-weight: 700 !important; */
     color: #092032;
 }
 a{ 
     color: #092032;
     text-decoration: none;
     transition: all 0.4s ease;
-    font-weight: 500;
+    /* font-weight: 400; */
 } 
-img{
-    width: 100%;
-}
+
 .bg-cover{
     background-position: center !important;
     background-size: cover !important;
@@ -111,5 +109,5 @@ img{
 
 /*********************** SLIDE ************************/
 .slide1{
-    background: linear-gradient(rgba(9,32,50,0.4),rgba(9,32,50,0.4)), url(../Images/biss.jpg);
+    background: linear-gradient(rgba(9,32,50,0.4),rgba(9,32,50,0.4)), url(/assets/img/2.jpg);
 }
