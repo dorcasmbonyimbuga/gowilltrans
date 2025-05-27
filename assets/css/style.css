@@ -114,3 +114,33 @@ a{
 .slide1{
     background: linear-gradient(rgba(9,32,50,0.4),rgba(9,32,50,0.4)), url(./../img/bg.jpg);
 }
+
+
+/***************** FOOTER ******************/
+footer {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(rgba(102,8,33, 0.8),rgba(0, 97, 191, 0.8), rgba(102,8,33, 0.8)),
+    url(./../img/img13.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+footer .navbar-brand {
+  color: #460f04;
+}
+
+.footer-top {
+  margin-bottom: 40px;
+}
+.footer-bottom {
+  border-top: 1px solid rgb(255, 255, 255, 0.08);
+  padding-top: 20px;
+}
+footer .social-links {
+  margin-left: 5px;
+  margin: 5px;
+}
