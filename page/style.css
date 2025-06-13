@@ -52,3 +52,12 @@ ul {
   background-color: #460f04;
   color: white;
 }
+
+
+
+/* services cards */
+.service-card:hover {
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      transform: scale(1.03);
+      transition: 0.3s;
+    }
