@@ -11,16 +11,10 @@ section {
 }
 
 h1,
-strong {
-  color: rgb(102, 8, 33);
-}
-h2,
-h3,
-h4,
-h5,
-h6 {
+strong,h2,h3,h4,h5,h6 {
   /* font-weight: 700 !important; */
-  color: #092032;
+  color: rgb(102, 8, 33);
+  text-align: center;
 }
 a {
   color: #092032;
@@ -29,7 +23,7 @@ a {
   /* font-weight: 400; */
 }
 .text-color {
-  color: #460f04;
+  color: rgb(102, 8, 33);
 }
 
 .bg-cover {
@@ -129,8 +123,8 @@ a {
   height: 500px;
   object-fit: cover;
 }
-.carousel-item h5{
-    color: #fff;
+.carousel-item h5 {
+  color: #fff;
 }
 
 /************************ FOOTER **********************/
@@ -151,7 +145,7 @@ footer {
 }
 
 footer .navbar-brand {
-  color: #460f04;
+  color: rgb(102, 8, 33);
 }
 
 .footer-top {
@@ -164,4 +158,73 @@ footer .navbar-brand {
 footer .social-links {
   margin-left: 5px;
   margin: 5px;
+}
+/* Section services */
+
+.intro-text {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #555;
+  font-size: 16px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 5px solid rgb(102, 8, 33);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 18px rgba(0, 97, 191, 0.15);
+}
+
+.service-card i {
+  font-size: 42px;
+  color: rgba(0, 97, 191, 0.8);
+  margin-bottom: 18px;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgb(102, 8, 33);
+}
+
+.service-card p {
+  color: #444;
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 60px;
+}
+
+.btn-service {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: rgb(102, 8, 33);
+  color: white;
+  border: 2px solid rgb(102, 8, 33);
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.btn-service:hover {
+  background-color: transparent;
+  color: rgb(102, 8, 33);
 }
