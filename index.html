@@ -213,6 +213,185 @@
             </div>
         </div>
     </section>
+
+
+
+
+  <style>
+    .car-img {
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+    }
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .carousel-indicators [data-bs-target] {
+      background-color: #333;
+    }
+    .testimonial img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #0d6efd;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Section Produits -->
+<!-- Section Produits avec indicateurs -->
+<section class="container my-5">
+  <h2 class="mb-3">Nos produits (Véhicules)</h2>
+  <p>Découvrez notre sélection de véhicules</p>
+
+  <div id="carCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <!-- Véhicule 1 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/img/4.jpg" class="car-img" alt="Véhicule 1">
+              <div class="card-body">
+                <h5 class="card-title">Marque A</h5>
+                <p class="card-text">SUV Compact<br><strong>Prix :</strong> 15 000€</p>
+              </div>
+            </div>
+          </div>
+          <!-- Véhicule 2 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/img/5.jpg" class="car-img" alt="Véhicule 2">
+              <div class="card-body">
+                <h5 class="card-title">Marque B</h5>
+                <p class="card-text">Berline<br><strong>Prix :</strong> 12 800€</p>
+              </div>
+            </div>
+          </div>
+          <!-- Véhicule 3 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/img/6.jpg" class="car-img" alt="Véhicule 3">
+              <div class="card-body">
+                <h5 class="card-title">Marque C</h5>
+                <p class="card-text">4x4 Tout Terrain<br><strong>Prix :</strong> 19 500€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="row">
+          <!-- Véhicule 4 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/img/7.jpg" class="car-img" alt="Véhicule 4">
+              <div class="card-body">
+                <h5 class="card-title">Marque D</h5>
+                <p class="card-text">Utilitaire<br><strong>Prix :</strong> 13 900€</p>
+              </div>
+            </div>
+          </div>
+          <!-- Véhicule 5 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/img/8.jpg" class="car-img" alt="Véhicule 5">
+              <div class="card-body">
+                <h5 class="card-title">Marque E</h5>
+                <p class="card-text">Citadine<br><strong>Prix :</strong> 9 500€</p>
+              </div>
+            </div>
+          </div>
+          <!-- Véhicule 6 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/img/9.jpg" class="car-img" alt="Véhicule 6">
+              <div class="card-body">
+                <h5 class="card-title">Marque F</h5>
+                <p class="card-text">Break Familial<br><strong>Prix :</strong> 11 400€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contrôles gauche/droite -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+    <!-- Indicateurs (points) -->
+    <div class="carousel-indicators mt-4">
+      <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="1"></button>
+    </div>
+  </div>
+
+  <!-- Bouton Voir plus -->
+  <div class="text-center mt-4">
+    <a href="#" class="btn btn-primary">Voir plus de véhicules</a>
+  </div>
+</section>
+
+
+<!-- Section Témoignages -->
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Témoignages de nos clients</h2>
+
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+          <div class="testimonial">
+            <img src="https://via.placeholder.com/80" alt="Client 1">
+            <h5 class="mt-2">Jean Dupont</h5>
+            <p class="text-muted">"Très bon service, voiture livrée en parfait état !"</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial">
+            <img src="https://via.placeholder.com/80" alt="Client 2">
+            <h5 class="mt-2">Marie Claire</h5>
+            <p class="text-muted">"Personnel à l’écoute, je recommande fortement."</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial">
+            <img src="https://via.placeholder.com/80" alt="Client 3">
+            <h5 class="mt-2">Ali Ben</h5>
+            <p class="text-muted">"Une expérience fluide du début à la fin."</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Indicateurs -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
     <!----------------- NOUS CONTACTEZ  --------------------->
 
     <section id="contact" class="contact">
