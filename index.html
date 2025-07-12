@@ -53,11 +53,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                    <a class="nav-link active activ" aria-current="page" href="#">Accueil</a>
                     <a class="nav-link" href="#about">A propos</a>
-                    <a class="nav-link" href="#">Nos services</a>
-                    <a class="nav-link" href="#">Blog</a>
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#services">Nos services</a>
+                    <a class="nav-link" href="#produits">Nos produits</a>
+                    <a class="nav-link" href="#temoignage">Blog</a>
+                    <li class="navbar-item">
+                        <a href="#" class="btn btn-brand ms-lg-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Contactez-nous</a>
+                    </li>
                 </div>
             </div>
         </div>
@@ -214,183 +218,163 @@
         </div>
     </section>
 
+    <!-- Section Produits -->
+    <section class="container my-5" id="produits">
+        <h2 class="mb-3">Nos produits (Véhicules)</h2>
+        <p>Découvrez notre sélection de véhicules</p>
+        <div id="carCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true"
+            data-bs-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <!-- Véhicule 1 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assets/img/4.jpg" class="car-img" alt="Véhicule 1">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="card-title mb-1">Marque A</h5>
+                                            <p class="card-text mb-0">SUV Compact<br><strong>Prix :</strong> 15 000€
+                                            </p>
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-primary">Acheter</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- Véhicule 2 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assets/img/5.jpg" class="car-img" alt="Véhicule 2">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="card-title mb-1">Marque B</h5>
+                                            <p class="card-text">Berline<br><strong>Prix :</strong> 12 800€</p>
+                                            </p>
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-primary">Acheter</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Véhicule 3 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assets/img/6.jpg" class="car-img" alt="Véhicule 3">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="card-title mb-1">Marque C</h5>
+                                            <p class="card-text">4x4 Tout Terrain<br><strong>Prix :</strong> 19 500€</p>
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-primary">Acheter</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-
-  <style>
-    .car-img {
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px 8px 0 0;
-    }
-    .card {
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .carousel-indicators [data-bs-target] {
-      background-color: #333;
-    }
-    .testimonial img {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 2px solid #0d6efd;
-    }
-  </style>
-</head>
-<body>
-
-<!-- Section Produits -->
-<!-- Section Produits avec indicateurs -->
-<section class="container my-5">
-  <h2 class="mb-3">Nos produits (Véhicules)</h2>
-  <p>Découvrez notre sélection de véhicules</p>
-
-  <div id="carCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="false">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="row">
-          <!-- Véhicule 1 -->
-          <div class="col-md-4">
-            <div class="card">
-              <img src="./assets/img/4.jpg" class="car-img" alt="Véhicule 1">
-              <div class="card-body">
-                <h5 class="card-title">Marque A</h5>
-                <p class="card-text">SUV Compact<br><strong>Prix :</strong> 15 000€</p>
-              </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <!-- Véhicule 4 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assets/img/7.jpg" class="car-img" alt="Véhicule 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Marque D</h5>
+                                    <p class="card-text">Utilitaire<br><strong>Prix :</strong> 13 900€</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Véhicule 5 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assets/img/8.jpg" class="car-img" alt="Véhicule 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Marque E</h5>
+                                    <p class="card-text">Citadine<br><strong>Prix :</strong> 9 500€</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Véhicule 6 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assets/img/9.jpg" class="car-img" alt="Véhicule 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Marque F</h5>
+                                    <p class="card-text">Break Familial<br><strong>Prix :</strong> 11 400€</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- Véhicule 2 -->
-          <div class="col-md-4">
-            <div class="card">
-              <img src="./assets/img/5.jpg" class="car-img" alt="Véhicule 2">
-              <div class="card-body">
-                <h5 class="card-title">Marque B</h5>
-                <p class="card-text">Berline<br><strong>Prix :</strong> 12 800€</p>
-              </div>
-            </div>
-          </div>
-          <!-- Véhicule 3 -->
-          <div class="col-md-4">
-            <div class="card">
-              <img src="./assets/img/6.jpg" class="car-img" alt="Véhicule 3">
-              <div class="card-body">
-                <h5 class="card-title">Marque C</h5>
-                <p class="card-text">4x4 Tout Terrain<br><strong>Prix :</strong> 19 500€</p>
-              </div>
-            </div>
-          </div>
+
+            <!-- Contrôles gauche/droite -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
         </div>
-      </div>
+        <!-- Indicateurs (points) -->
+        <div class="carousel-indicators carousel-indicators-test mt-4">
+            <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="1"></button>
+        </div>
+        <!-- Bouton Voir plus -->
+        <div class="text-center mt-4">
+            <a href="#" class="btn btn-brand">Voir plus de véhicules</a>
+        </div>
+    </section>
 
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="row">
-          <!-- Véhicule 4 -->
-          <div class="col-md-4">
-            <div class="card">
-              <img src="./assets/img/7.jpg" class="car-img" alt="Véhicule 4">
-              <div class="card-body">
-                <h5 class="card-title">Marque D</h5>
-                <p class="card-text">Utilitaire<br><strong>Prix :</strong> 13 900€</p>
-              </div>
+
+    <!-- Section Témoignages -->
+    <section id="temoignage" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Témoignages de nos clients</h2>
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner text-center">
+                    <div class="carousel-item active">
+                        <div class="testimonial">
+                            <img src="./assets/img/profile.jpg" alt="Client 1">
+                            <h5 class="mt-2">Jean Dupont</h5>
+                            <p class="text-muted">"Très bon service, voiture livrée en parfait état !"</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial">
+                            <img src="./assets/img/profile2.jpg" alt="Client 2">
+                            <h5 class="mt-2">Marie Claire</h5>
+                            <p class="text-muted">"Personnel à l’écoute, je recommande fortement."</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial">
+                            <img src="./assets/img/sauro.jpg" alt="Client 3">
+                            <h5 class="mt-2">Ali Ben</h5>
+                            <p class="text-muted">"Une expérience fluide du début à la fin."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Indicateurs -->
+                <div class="carousel-indicators carousel-indicators-test">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+                </div>
             </div>
-          </div>
-          <!-- Véhicule 5 -->
-          <div class="col-md-4">
-            <div class="card">
-              <img src="./assets/img/8.jpg" class="car-img" alt="Véhicule 5">
-              <div class="card-body">
-                <h5 class="card-title">Marque E</h5>
-                <p class="card-text">Citadine<br><strong>Prix :</strong> 9 500€</p>
-              </div>
-            </div>
-          </div>
-          <!-- Véhicule 6 -->
-          <div class="col-md-4">
-            <div class="card">
-              <img src="./assets/img/9.jpg" class="car-img" alt="Véhicule 6">
-              <div class="card-body">
-                <h5 class="card-title">Marque F</h5>
-                <p class="card-text">Break Familial<br><strong>Prix :</strong> 11 400€</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Contrôles gauche/droite -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-
-    <!-- Indicateurs (points) -->
-    <div class="carousel-indicators mt-4">
-      <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="1"></button>
-    </div>
-  </div>
-
-  <!-- Bouton Voir plus -->
-  <div class="text-center mt-4">
-    <a href="#" class="btn btn-primary">Voir plus de véhicules</a>
-  </div>
-</section>
-
-
-<!-- Section Témoignages -->
-<section class="bg-light py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Témoignages de nos clients</h2>
-
-    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner text-center">
-        <div class="carousel-item active">
-          <div class="testimonial">
-            <img src="https://via.placeholder.com/80" alt="Client 1">
-            <h5 class="mt-2">Jean Dupont</h5>
-            <p class="text-muted">"Très bon service, voiture livrée en parfait état !"</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="testimonial">
-            <img src="https://via.placeholder.com/80" alt="Client 2">
-            <h5 class="mt-2">Marie Claire</h5>
-            <p class="text-muted">"Personnel à l’écoute, je recommande fortement."</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="testimonial">
-            <img src="https://via.placeholder.com/80" alt="Client 3">
-            <h5 class="mt-2">Ali Ben</h5>
-            <p class="text-muted">"Une expérience fluide du début à la fin."</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Indicateurs -->
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
+    </section>
 
     <!----------------- NOUS CONTACTEZ  --------------------->
 
@@ -442,8 +426,10 @@
                         <a href="#" class="navbar-brand">A PROPOS DE NOUS</a>
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus omnis quo repellat
-                            deserunt voluptas, dolores error tempore. Aliquid impedit culpa soluta sunt quasi, fugiat
-                            eos, accusamus ut, similique libero quibusdam earum necessitatibus deserunt quia? Doloribus
+                            deserunt voluptas, dolores error tempore. Aliquid impedit culpa soluta sunt quasi,
+                            fugiat
+                            eos, accusamus ut, similique libero quibusdam earum necessitatibus deserunt quia?
+                            Doloribus
                             nam ab reiciendis perferendis tempore.
                         </p>
                     </div>
@@ -484,7 +470,8 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="container">
-                    <p class="mb-0">Copyrights © <span id="year"></span> All rights reserved - GOWILL TRANS - Designed
+                    <p class="mb-0">Copyrights © <span id="year"></span> All rights reserved - GOWILL TRANS -
+                        Designed
                         by Dorcas
                         Mbonyimbuga</p>
                 </div>
@@ -493,53 +480,48 @@
     </footer>
 
     <!-- Modal -->
+    <!-- Modal avec fond image et overlay -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl  modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body p-0">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-4 bg-cover modal-img" style="min-height: 200px;"></div>
-                            <div class="col-lg-8">
-                                <form action="" class="row p-lg-5 gy-3">
-                                    <div class="col-12">
-                                        <h2>Voulez-vous vous joindre à nous? Ecrivez nous ici</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi commodi
-                                            qui veniam?</p>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label for="exampleFormControlInput1" class="form-label">Nom</label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput1"
-                                            placeholder="Votre nom">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label for="contactExp" class="form-label">Num de téléphone</label>
-                                        <input type="text" class="form-control" id="contactExp" name="contactExp"
-                                            placeholder="Votre num de téléphone">
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <label for="exampleFormControlInput3" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput3"
-                                            placeholder="Votre email. Ex: example@gmail.com">
-                                    </div>
-                                    <div class="col-12">
-                                        <label for="message" class="form-label">Message</label>
-                                        <textarea name="" id="" cols="30" rows="4" class="form-control"
-                                            placeholder="Ecrivez votre message ici"></textarea>
-                                    </div>
-                                    <div class="col-12">
-                                        <button type="button" class="btn btn-brand">Envoyer</button>
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Annuler</button>
-                                    </div>
-                                </form>
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content position-relative">
+                <!-- Image de fond -->
+                <div class="modal-background"></div>
+                <!-- Overlay semi-transparent -->
+                <div class="modal-overlay"></div>
+                <!-- Contenu du formulaire -->
+                <div class="modal-body text-white position-relative p-5">
+                    <div class="container">
+                        <h2 class="mb-3 text-white">Voulez-vous vous joindre à nous ?</h2>
+                        <p class="mb-4">Écrivez-nous ici</p>
+                        <form action="#" class="row gy-3">
+                            <div class="col-lg-4">
+                                <label class="form-label">Nom</label>
+                                <input type="text" class="form-control" placeholder="Votre nom">
                             </div>
-                        </div>
+                            <div class="col-lg-4">
+                                <label class="form-label">Numéro de téléphone</label>
+                                <input type="text" class="form-control" placeholder="Votre téléphone">
+                            </div>
+                            <div class="col-lg-4">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="example@gmail.com">
+                            </div>
+                            <div class="col-lg-12">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" rows="4" placeholder="Votre message"></textarea>
+                            </div>
+                            <div class="col-12 d-flex  mt-3">
+                                <button type="submit" class="btn btn-brand">Envoyer</button>&nbsp;&nbsp;&nbsp;
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
+
 
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();

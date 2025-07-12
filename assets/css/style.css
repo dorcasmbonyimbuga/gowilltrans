@@ -11,7 +11,12 @@ section {
 }
 
 h1,
-strong,h2,h3,h4,h5,h6 {
+strong,
+h2,
+h3,
+h4,
+h5,
+h6 {
   /* font-weight: 700 !important; */
   color: rgb(102, 8, 33);
   text-align: center;
@@ -134,14 +139,16 @@ footer {
   color: #fff;
   text-align: center;
   background: linear-gradient(
-      rgba(102, 8, 33, 0.8),
-      rgba(0, 97, 191, 0.8),
-      rgba(102, 8, 33, 0.8)
-    ),
-    url(./../img/img13.png);
+    rgba(102, 8, 33, 0.8),
+    rgba(0, 97, 191, 0.8),
+    rgba(102, 8, 33, 0.8)
+  );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+#temoignage {
+  background: linear-gradient(rgba(102, 8, 33, 0.3), rgba(102, 8, 33, 0.6));
 }
 
 footer .navbar-brand {
@@ -227,4 +234,73 @@ footer .social-links {
 .btn-service:hover {
   background-color: transparent;
   color: rgb(102, 8, 33);
+}
+/* TEstimonies and products */
+
+.car-img {
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: rgb(102, 8, 33);
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #0d6efd;
+}
+
+.carousel-indicators-test {
+  position: static;
+  /* Supprime la position absolue par défaut */
+}
+/* Modal */
+.modal-content {
+  background: transparent;
+  border: none;
+  overflow: hidden;
+}
+
+.modal-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: url('./../img/logoGowill.png'); */
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(102, 8, 33, 0.5),
+    rgba(102, 8, 33, 0.5)
+  );
+  z-index: 1;
+}
+
+.modal-body.position-relative {
+  z-index: 2;
 }
