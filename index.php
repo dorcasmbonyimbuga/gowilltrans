@@ -62,7 +62,7 @@
                         <a href="#" class="btn btn-brand ms-lg-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Contactez-nous</a>
                     </li>
-                    <li class="navbar-item"><a href="#" class="btn btn-brand ms-lg-3">Connexion</a></li>
+                    <li class="navbar-item"><a href="./admin/login/login.php" class="btn btn-brand ms-lg-3">Connexion</a></li>
                 </div>
             </div>
         </div>
@@ -76,7 +76,7 @@
                     <h6 class="text-white">TRANSPORT ET LOGISTIQUE</h6>
                     <h6 class="text-white">VENTE ET ACHAT DES VEHICULES</h6>
                     <a href="#" class="btn btn-brand">Commandez</a>
-                    <a href="#" class="btn btn-outline-light">Connexion</a>
+                    <a href="./admin/login/login.php" class="btn btn-outline-light">Connexion</a>
                 </div>
             </div>
         </div>
