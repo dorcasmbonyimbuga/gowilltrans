@@ -8,6 +8,7 @@ CREATE TABLE vehicule (
     num_chassis VARCHAR(50) UNIQUE NOT NULL,
     marque VARCHAR(50) NOT NULL,
     prix DOUBLE NOT NULL CHECK (prix > 0),
+    genre VARCHAR(20) NOT NULL,
     photo VARCHAR(200)
 );
 
@@ -37,6 +38,7 @@ CREATE TABLE payement (
     idPaye INT AUTO_INCREMENT PRIMARY KEY,
     refCmd INT NOT NULL,
     montantPaye DOUBLE NOT NULL CHECK (montantPaye > 0),
+    odalite VARCHAR(11) NOT NULL,
     datePaye DATE NOT NULL,
     FOREIGN KEY (refCmd) REFERENCES commande(idCmd)
 );
