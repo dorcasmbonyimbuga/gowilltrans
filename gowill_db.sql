@@ -107,3 +107,121 @@ FROM programme pr
 JOIN commande c ON pr.refCmdP = c.idCmd
 JOIN client cl ON c.refClient = cl.idClient
 JOIN vehicule v ON c.refVehicule = v.idVehicule;
+-- Triggers
+-- Payement Trigger
+DELIMITER $$
+
+CREATE TRIGGER trg_before_insert_payement
+BEFORE INSERT ON payement
+FOR EACH ROW
+BEGIN
+    DECLARE total_existant DECIMAL(10,2);
+    DECLARE prix_vehicule DECIMAL(10,2);
+
+    -- Somme des paiements déjà effectués
+    SELECT IFNULL(SUM(montantPaye), 0) INTO total_existant
+    FROM payement
+    WHERE refCmd = NEW.refCmd;
+
+    -- Récupérer le prix du véhicule correspondant à la commande
+    SELECT v.prix INTO prix_vehicule
+    FROM commande c
+    INNER JOIN vehicule v ON c.refVehicule = v.idVehicule
+    WHERE c.idCmd = NEW.refCmd;
+
+    -- Vérification
+    IF (total_existant + NEW.montantPaye > prix_vehicule) THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Montant total payé dépasse le prix du véhicule';
+    END IF;
+END$$
+
+DELIMITER ;
+
+-- Trigger pour mise à jour
+CREATE TRIGGER trg_before_update_payement
+BEFORE UPDATE ON payement
+FOR EACH ROW
+BEGIN
+    DECLARE total_existant DECIMAL(10,2);
+    DECLARE prix_vehicule DECIMAL(10,2);
+
+    -- Total payé sans l'ancien montant (car on modifie)
+    SELECT IFNULL(SUM(montantPaye), 0) - OLD.montantPaye INTO total_existant
+    FROM payement
+    WHERE refCmd = NEW.refCmd;
+
+    -- Prix du véhicule
+    SELECT v.prix INTO prix_vehicule
+    FROM commande c
+    INNER JOIN vehicule v ON c.refVehicule = v.idVehicule
+    WHERE c.idCmd = NEW.refCmd;
+
+    -- Vérification
+    IF (total_existant + NEW.montantPaye > prix_vehicule) THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Montant total payé dépasse le prix du véhicule';
+    END IF;
+END;
+
+-- Trigger pour la table programme
+DELIMITER $$
+
+CREATE TRIGGER after_insert_programme
+AFTER INSERT ON programme
+FOR EACH ROW
+BEGIN
+  UPDATE commande
+  SET statut = 'Programmé'
+  WHERE idCmd = NEW.refCmdP;
+END$$
+
+DELIMITER ;
+
+DELIMITER $$
+
+CREATE TRIGGER after_insert_or_update_programme_date
+AFTER INSERT ON programme
+FOR EACH ROW
+BEGIN
+  IF NEW.dateEstime <= CURDATE() THEN
+    UPDATE commande
+    SET statut = 'Arrivé'
+    WHERE idCmd = NEW.refCmd;
+  END IF;
+END$$
+
+DELIMITER ;
+-- Lors de la mise à jour de la date estimée
+DELIMITER $$
+
+CREATE TRIGGER after_update_programme
+AFTER UPDATE ON programme
+FOR EACH ROW
+BEGIN
+  IF NEW.dateEstime <= CURDATE() THEN
+    UPDATE commande
+    SET statut = 'Arrivé'
+    WHERE idCmd = NEW.refCmd;
+  ELSE
+    UPDATE commande
+    SET statut = 'Programmé'
+    WHERE idCmd = NEW.refCmd;
+  END IF;
+END$$
+
+DELIMITER ;
+
+
+
+
+const formData = new FormData();
+formData.append('action', 'update_photo_user');
+formData.append('photo', document.querySelector('#photoInput').files[0]);
+
+fetch('profil_action_user.php', {
+  method: 'POST',
+  body: formData
+})
+.then(response => response.text())
+.then(msg => console.log(msg));
