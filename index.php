@@ -13,7 +13,7 @@
 
 <body data-spy="scroll" data-target=".navbar">
     <nav class="top-nav" id="home">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row justify-content-between">
                 <div class="col-auto">
                     <p>
@@ -113,7 +113,7 @@
                     et autres
                     matériaux lourds sur tous vos chantiers.<br>
 
-                    ✔️<strong>Location de grues :</strong> Pour vos travaux de levage ou de construction, nous proposons
+                    ✔️<strong>Location grue :</strong> Pour vos travaux de levage ou de construction, nous proposons
                     un service de
                     location de grues performant et sécurisé.<br>
                     </h6>
@@ -142,13 +142,13 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="./assets/img/img1.jpg" class="d-block w-100" alt="">
+                                <img src="./assets/img/transEtLog.jpg" class="d-block w-100" alt="">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Transport et logistique</h5>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="./assets/img/img2.jpg" class="d-block w-100" alt="">
+                                <img src="./assets/img/imgVoiture.jpg" class="d-block w-100" alt="">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Achat et vente de véhicules</h5>
                                 </div>
@@ -160,13 +160,13 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="./assets/img/img4.jpg" class="d-block w-100" alt="./assets/img/img1.jpg">
+                                <img src="./assets/img/imgMateriel.jpg" class="d-block w-100" alt="./assets/img/imgMateriel.jpg">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Transport de matériaux de construction</h5>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="./assets/img/img5.jpg" class="d-block w-100" alt="./assets/img/img1.jpg">
+                                <img src="./assets/img/imgGrue.jpg" class="d-block w-100" alt="./assets/img/imgGrue.jpg">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Location de grues</h5>
                                 </div>
@@ -192,7 +192,7 @@
             <div class="service-card">
                 <i class="fas fa-truck"></i>
                 <h3>Transport & Logistique</h3>
-                <p>Transport rapide et sécurisé de vos marchandises, en local comme à longue distance.</p>
+                <p>Transport rapide et sécurisé de vos marchandises, à l'Est de la RDC.</p>
                 <a href="transport.html" class="btn-service">En savoir plus</a>
             </div>
 
