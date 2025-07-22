@@ -22,7 +22,7 @@
                     </p>
                     <p>
                         <i class="fa-solid fa-phone-volume"></i>
-                        <span>+243 978 330 585 | +243 975 819 750</span>
+                        <span>+243 846 596 603 | +243 975 819 750</span>
                     </p>
                 </div>
                 <div class="col-auto">
@@ -446,7 +446,7 @@
                         <a href="#" class="navbar-brand">NOS CONTACTS</a>
                         <p>
                             <i class="fa-solid fa-phone-volume"></i>
-                            <span>+243 978 330 585 | +243 975 819 750</span>
+                            <span>+243 846 596 603 | +243 975 819 750</span>
                         </p>
                         <p>
                             <i class="fa-solid fa-envelope"></i>
@@ -472,9 +472,8 @@
             <div class="container">
                 <div class="container">
                     <p class="mb-0">Copyrights © <span id="year"></span> All rights reserved - GOWILL TRANS -
-                        Designed
-                        by Dorcas
-                        Mbonyimbuga</p>
+                        Designed by Dorcas Mbonyimbuga
+                    </p>
                 </div>
             </div>
         </div>
